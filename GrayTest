@@ -1,0 +1,11 @@
+import cv2
+#Read Image
+image = cv2.imread('testimg.jpg')
+#Display original Image
+cv2.imshow('Image',image)
+#Applying GrayScale filter to Image
+gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+#Display filtered image
+cv2.imshow('Graytest',gray)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
